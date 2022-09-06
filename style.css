@@ -1,0 +1,36 @@
+.background{
+    background-color: whitesmoke;
+    font-size: large;
+    display: block;
+    position: relative;
+}
+.drumbeats{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid black;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    bottom: 50%;
+    margin-top: 25%;
+    left: 15%;
+    padding: 10px;
+}
+div.hidden{
+    border: 2px solid gold;
+    box-shadow: 4px 4px black;
+    background-color: whitesmoke;
+    color: black;
+}
+
+.mainHeading{
+    font-size: 100px;
+    box-shadow: 5px 0px 4px solid black;
+    color: whitesmoke;
+    -webkit-text-stroke: 1px black;
+    text-align: center;
+}
