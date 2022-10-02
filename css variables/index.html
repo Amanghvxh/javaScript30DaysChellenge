@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variables</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    
+    <div class="main_container">
+        <h1 class="main_heading">
+            This is a project about<br>  css variables <br>and JS
+        </h1>
+        <img class="image" crossorigin="anonymous"alt="">
+        <div class="lever_container">
+        <label for="spacing">Spacing</label>
+        <input type="range" id="spacing" value="0" min="0" max="100" name="spacing" step="1">
+
+        <label for="blur">Blur</label>
+        <input type="range" id="blur" value="0" min="0" max="5" name="Blur" step="0.1">
+
+        <label for="brightness">Brightness</label>
+        <input type="range" id="brightness" value="100" min="0" max="200" name="brightness" step="1">
+
+        <label for="contrast">Contrast</label>
+        <input type="range" id="contrast" value="100" min="0" max="200" name="Contrast" step="1">
+
+        <label for="saturation">Saturation</label>
+        <input type="range" id="saturation" value="100" min="0" max="200" name="Saturation" step="1">
+
+        <label for="invert">Invert</label>
+        <input type="range" id="invert" value="0" min="0" max="100" name="invert" step="1">
+
+        <label for="sepia">Sepia</label>
+        <input type="range" id="sepia" value="0" min="0" max="100" name="sepia" step="1">
+
+        <label for="greyscale">Greyscale</label>
+        <input type="range" id="greyscale"  min="0" max="100" name="greyscale" step="1">
+
+        <label for="opacity">Opacity</label>
+        <input type="range" id="opacity" value="100" min="0" max="100" name="opacity" step="1">
+
+        <label for="hue_rotation">Hue</label>
+        <input type="range" id="hue_rotation" value="0" min="-340" max="340" name="hue_rotation" step="1">
+
+        <label for="Colour">Colour</label>
+        <input type="color" id="colour" width="100px" height="40px">
+        </div>
+        <div class="export_options">
+            <a class="download_btn">Download</a>
+            <label for="addImage_id" class="addImage_file_label">
+                Add Image
+            </label>
+            <input type="file" accept="image/*" id="addImage_id" aria-label="file browser example" class="addImageBtn">
+            <!-- <div class="transfer_button">
+                edit it
+                <a href=".canvas/canvas.html" target="_blank">Edit it!</a>
+            </div>
+        </div> -->
+
+    </div>
+    <div class="upload_container">
+        <label for="file_id" class="upload_file_label">
+            Upload file!
+        </label>
+        <input type="file" accept="image/*" id="file_id" aria-label="file browser example" class="upload_file">
+        <!-- <a href="./canvas/canvas.html" class="upload_file_label draw_button">Draw</a> -->
+    </div>
+    
+    <div class="drawing_container"></div>
+</body>
+
+</html>

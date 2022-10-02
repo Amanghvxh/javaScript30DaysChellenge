@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw canvas</title>
+    <script src="https://kit.fontawesome.com/132630f976.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="canvas.css">
+    <script src="canvas.js" defer></script>
+</head>
+
+<body>
+    <div class="main_container">
+        <header>
+            <div class="header_text">This is a header</div>
+        </header>
+        <div class="tools_container">
+            <input type="color" class="colour">
+            <div class="brush">
+                <span class="brush_button"><i class="fa-solid fa-brush"></i></span>
+                <label for="brushSize" class="brushSize none"></label>
+                <input type="range" id="brushSize" value="20" min="0" max="100" step="1" class="brush_size none">
+            </div>
+            <div class="eraser_container">
+                <span class="eraser_button"><i class="fa-solid fa-eraser"></i></span>
+                <label for="eraserSize" class="eraserSize none"></label>
+                <input type="range" id="eraserSize" value="20" min="0" max="100" step="1" class="eraser_size none">
+            </div>
+            <div class="background">
+                <label for="canvasColour" class="canvas_colour">Canvas Background</label>
+                <div class="canvas_background"></div>
+                <input type="color" class="canvas_background_picker">
+            </div>
+        </div>
+        <div class="canvas_container">
+            <canvas class="canvas" data-currentcanvas='1'>
+            </canvas>
+        </div>
+        <div class="export_container">
+            <a href="" class="download_button">Download</a>
+            <button class="add_canvas">Add canvas</button>
+            <button class="redo"><i class="fa-solid fa-arrow-rotate-right"></i></button>
+            <div class="canvas_button_container">
+                <div class="canvas_button" data-canvasbuttonnum="1">
+                    <p class="canvas_number">
+                        Canvas-1
+                    </p>
+                    <span class="delete_btn">✖</span>
+                </div>
+            </div>
+            <!-- <div class="return_to_main">
+                <a href="../index.html">Photoshop</a>
+            </div> -->
+
+            <!-- <div class="apply_filters">
+                <a href="../index.html" target="_blank">Edit it!</a>
+            </div> -->
+        </div>
+
+    </div>
+    <!-- <div class="photoshop_container"></div> -->
+</body>
+
+</html>
