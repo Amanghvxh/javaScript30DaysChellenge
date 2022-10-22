@@ -1,0 +1,101 @@
+body{
+    width: 100%;
+    height: 100vh;
+}
+.game_container{
+    width: 100%;
+    height: 100vh;
+}
+.main_container{
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+}
+.hole_container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    vertical-align: center;
+    cursor: url(./resources/hammer.png),auto;
+}
+.hole{
+    display: flex;
+    width: 150px;
+    height: 80px;
+    margin-right: 10px;
+    margin-top: 15%;
+    background-color: black;
+    border-radius: 5px;
+}
+.hole_main{
+    border-radius: 20px;
+    background-color: black;
+    width: 150px;
+    height: 80px;
+    margin-right: 10px;
+}
+.mole{
+    position: relative;
+    margin-left: 30%;
+    z-index: -1;
+    transition: all 300ms ease-in;
+}
+
+.total_score{
+    position: relative;
+    top: -15%;
+    right: -45%;
+}
+.total_score_p{
+    display: inline;
+}
+
+
+.game_over_container{
+    display: none;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    background-color: rgba(25, 28, 35, 0.8);
+    
+}
+.model_window{
+    display:flex;
+    width: 400px;
+    height: 200px;
+    border-radius: 20px;
+    border: 10px double black;
+    background-color: white;
+    justify-content: center;
+    align-items: flex-end;
+    
+
+}
+.model_text{
+    font-size: 40px;
+    font-weight: 700;
+    position: absolute;
+    align-self: flex-start;
+}
+.restart_button{
+    border: 4px double black;
+    border-radius: 20px; 
+    background-color: white;
+    font-size: medium;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    margin-bottom: 12px;
+    line-height: 44px;
+}
+
+.hammer_image{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    box-sizing: content-box;
+}
